@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  background: rgba(255,255,255,0.95);
+  padding: 32px 40px;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(145, 92, 182, 0.15);
+  text-align: center;
+  max-width: 540px;
+  width: 95vw;
+  margin: 20px auto;
+  animation: fadeIn 2s;
+  position: relative;
+}
+
+.photo {
+  width: 110px;
+  border-radius: 60px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 16px rgba(220, 118, 244, 0.16);
+  border: 3px solid #fccb90;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #d57eeb;
+  font-family: 'Pacifico', cursive;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.15em;
+  color: #644591;
+  margin-bottom: 0.8em;
+  line-height: 1.5;
+}
+
+.confession-container {
+  background-color: #ffeafd;
+  padding: 28px 16px;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(214, 126, 235, 0.14);
+  text-align: left;
+  margin-top: 26px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  margin: 22px auto 18px auto;
+  background: linear-gradient(90deg,#fccb90 0%,#d57eeb 100%);
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.header-nav {
+  width: 95vw;
+  max-width: 560px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  background: #d57eeb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px #d57eebaa;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #fccb90;
+  color: #5a2a70;
+}
+
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .welcome-container {
+    padding: 16px 6vw;
+    max-width: 100vw;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  .photo {
+    width: 80px;
+  }
+  .confession-container {
+    padding: 14px 5px;
+    font-size: 1em;
+  }
+}
